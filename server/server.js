@@ -99,7 +99,7 @@ function start() {
 // start();
 
 if (process.env.VERCEL) {
-  connectDB();
+  await connectDB();
 } else {
   start();
 }
