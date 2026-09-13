@@ -96,7 +96,15 @@ function start() {
   connectDB();
 }
 
-start();
+// start();
+
+if (process.env.VERCEL) {
+  connectDB();
+} else {
+  start();
+}
+
+export default app;
 
 // Prevent unhandled promise rejections from silently crashing the process
 process.on('unhandledRejection', (err) => {
