@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -33,12 +32,17 @@ jobs:
         with:
           node-version: lts/*
           cache: npm
+          cache-dependency-path: client/package-lock.json
 
       - name: Install dependencies
         run: npm ci
+        working-directory: ./client
 
       - name: Build
         run: npm run build
+        working-directory: ./client
+        env:
+          VITE_API_URL: https://your-backend-name.vercel.app/api
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
@@ -46,7 +50,7 @@ jobs:
       - name: Upload production build
         uses: actions/upload-pages-artifact@v5
         with:
-          path: ./dist
+          path: ./client/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
