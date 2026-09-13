@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="container navbar-inner" aria-label="Primary">
         <a href="#home" className="navbar-brand" onClick={closeMenu}>
           {profile.name}
-          <span>.</span>
+          <span></span>
         </a>
 
         <button
