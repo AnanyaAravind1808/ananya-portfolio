@@ -1,0 +1,8 @@
+Place your actual resume PDF here as:
+
+  Ananya_Resume.pdf
+
+The Resume section of the site will try to download this file.
+If it is missing, the site will NOT crash — it shows a graceful
+"Resume currently unavailable" message instead (see Resume-related
+code in src/components/Hero.jsx / a dedicated resume link + api check).

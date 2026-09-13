@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#eef2f7"/>
+  <g fill="none" stroke="#94a3b8" stroke-width="2">
+    <rect x="40" y="50" width="320" height="140" rx="8"/>
+    <circle cx="100" cy="100" r="16"/>
+    <path d="M40 170 L140 110 L200 150 L260 90 L360 160" />
+  </g>
+  <text x="200" y="215" font-size="14" font-family="Arial, sans-serif" fill="#64748b" text-anchor="middle">
+    Project image coming soon
+  </text>
+</svg>
