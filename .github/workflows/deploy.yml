@@ -42,7 +42,7 @@ jobs:
         run: npm run build
         working-directory: ./client
         env:
-          VITE_API_URL: https://your-backend-name.vercel.app/api
+          VITE_API_URL: https://ananya-portfolio-server.vercel.app/api
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
